@@ -11,6 +11,18 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :book_name %><br>
+    <%= f.text_field :book_name %>
+  </div>
+  <div class="field">
+    <%= f.label :old_price %><br>
+    <%= f.number_field :old_price %>
+  </div>
+  <div class="field">
+    <%= f.label :new_price %><br>
+    <%= f.number_field :new_price %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

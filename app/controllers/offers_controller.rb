@@ -69,6 +69,6 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params[:offer]
+      params.require(:offer).permit(:book_name, :old_price, :new_price)
     end
 end
