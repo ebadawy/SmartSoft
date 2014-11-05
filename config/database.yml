@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
+  password: q
   socket: /var/run/mysqld/mysqld.sock
 
 development:
@@ -27,6 +27,7 @@ development:
 test:
   <<: *default
   database: SmartSoft_test
+  database: SmartSoft_development
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
