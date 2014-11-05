@@ -1,4 +1,6 @@
-language: ruby
-rvm:
-  2.1.1-p76
-bundler_args: --without production
+ language: ruby
+ rvm:
+   - 2.1
+ branches:
+   only:
+   - master
